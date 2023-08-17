@@ -1,4 +1,4 @@
-// script.js
+// Fungsi untuk menghitung luas segitiga
 function calculateArea() {
     var alas = parseFloat(document.getElementById('alas').value);
     var tinggi = parseFloat(document.getElementById('tinggi').value);
@@ -12,7 +12,7 @@ function calculateArea() {
     document.getElementById('luas-output').innerHTML += `<br>Luas = ${hasil} cm²`;
     }
 }
-
+// Fungsi untuk menghitung keliling segitiga
 function calculatePerimeter() {
     var sisiA = parseFloat(document.getElementById('sisiA').value);
     var sisiB = parseFloat(document.getElementById('sisiB').value);
@@ -27,13 +27,13 @@ function calculatePerimeter() {
     document.getElementById('keliling-output').innerHTML += `<br>Keliling = ${keliling} cm`;
 }
 }
-
+// Fungsi untuk mereset input fields luas segitiga
 function resetFields() {
     document.getElementById('alas').value = '';
     document.getElementById('tinggi').value = '';
     document.getElementById('luas-output').innerHTML = '';
 }
-
+// Fungsi untuk mereset input fields keliling segitiga
 function resetFieldskeliling() {
     document.getElementById('sisiA').value = '';
     document.getElementById('sisiB').value = '';
