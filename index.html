@@ -13,13 +13,15 @@
         <h1>KALKULATOR MINI || BIMA DHARMA</h1>
     </header>
 <main>
+    <!-- Bagian input perhitungan luas segitiga -->
     <section class="input-section">
         <h2 class="perhitungan">Perhitungan Luas Segitiga</h2>
-        
+
+        <!-- Gambar ilustrasi segitiga -->
             <div class="gambar">
                 <img src="https://ilmuplus.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/03/segitiga.jpg.webp" width="100px" height="100px" >   
             </div> 
-            
+        <!-- Deskripsi rumus luas segitiga -->    
         <div class="rumus">
             <p>RUMUS LUAS SEGITIGA</p>
             
@@ -30,28 +32,34 @@
             <li>t = Tinggi</li>
 
         </div>
+        <!-- Input fields untuk alas dan tinggi segitiga -->
         <label for="alas">Alas Segitiga</label>
         <input type="number" id="alas" placeholder="0">
         <label for="tinggi">Tinggi Segitiga</label>
         <input type="number" id="tinggi" placeholder="0">
         
+        <!-- Tombol hitung luas dan reset -->
     <section>
         <button onclick="calculateArea()">Hitung Luas</button>
         <button onclick="resetFields()">Reset</button>
     </section>
-
+        
+        <!-- Output hasil perhitungan luas segitiga -->
       <div id="luas-output"></div> 
     </section>
-    
+
+     <!-- Bagian input perhitungan keliling segitiga -->
     <section class="input-section">
         <div class="perhitungan">
             <h2>Perhitungan Keliling Segitiga</h2>
         </div>
         
+        <!-- Gambar ilustrasi segitiga -->
         <div class="gambar">
          <img src="https://ilmuplus.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/03/segitiga.jpg.webp" width="100px" height="100px" >   
         </div>
-        
+         
+        <!-- Deskripsi rumus keliling segitiga -->
         <div class="rumus">
             <p>RUMUS KELILING SEGITIGA</p>
             <center><b>K = S1 + S2 + S3</b></center>
@@ -61,6 +69,8 @@
             <li>S2 = Sisi B</li>
             <li>S2 = Sisi C</li>
         </div>
+
+        <!-- Input fields untuk sisi A, B, dan C segitiga -->
         <label for="sisiA">Sisi a</label>
         <input type="number" id="sisiA" placeholder="0">
         <label for="sisiB">Sisi b</label>
@@ -68,12 +78,13 @@
         <label for="sisiC">Sisi c</label>
         <input type="number" id="sisiC" placeholder="0">
        
+        <!-- Tombol hitung keliling dan reset -->
         <section>
         <button onclick="calculatePerimeter()">Hitung Keliling</button>
         <button onclick="resetFieldskeliling()">Reset</button>
        </section>
         
-         
+        <!-- Output hasil perhitungan keliling segitiga -->
       <div id="keliling-output"></div> 
     </section>
 </main>
