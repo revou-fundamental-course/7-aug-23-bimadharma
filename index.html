@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>kalkulator Segitiga</title>
+</head>
+<body>
+    <header>
+        <h1>KALKULATOR MINI || BIMA DHARMA</h1>
+    </header>
+<main>
+    <section class="input-section">
+        <h2 class="perhitungan">Perhitungan Luas Segitiga</h2>
+        
+            <div class="gambar">
+                <img src="https://ilmuplus.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/03/segitiga.jpg.webp" width="100px" height="100px" >   
+            </div> 
+            
+        <div class="rumus">
+            <p>RUMUS LUAS SEGITIGA</p>
+            
+            <center><b>L = 1/2 x a x t</b></center>
+            <p>KETERANGAN</p>
+            <li>L = Luas</li>
+            <li>a = panjang Alas</li>
+            <li>t = Tinggi</li>
+
+        </div>
+        <label for="alas">Alas Segitiga</label>
+        <input type="number" id="alas" placeholder="0">
+        <label for="tinggi">Tinggi Segitiga</label>
+        <input type="number" id="tinggi" placeholder="0">
+        
+    <section>
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <button onclick="resetFields()">Reset</button>
+    </section>
+
+      <div id="luas-output"></div> 
+    </section>
+    
+    <section class="input-section">
+        <div class="perhitungan">
+            <h2>Perhitungan Keliling Segitiga</h2>
+        </div>
+        
+        <div class="gambar">
+         <img src="https://ilmuplus.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/03/segitiga.jpg.webp" width="100px" height="100px" >   
+        </div>
+        
+        <div class="rumus">
+            <p>RUMUS KELILING SEGITIGA</p>
+            <center><b>K = S1 + S2 + S3</b></center>
+            <p>KETERANGAN</p>
+            <li>K = Keliling</li>
+            <li>S1 = Sisi A</li>
+            <li>S2 = Sisi B</li>
+            <li>S2 = Sisi C</li>
+        </div>
+        <label for="sisiA">Sisi a</label>
+        <input type="number" id="sisiA" placeholder="0">
+        <label for="sisiB">Sisi b</label>
+        <input type="number" id="sisiB" placeholder="0">
+        <label for="sisiC">Sisi c</label>
+        <input type="number" id="sisiC" placeholder="0">
+       
+        <section>
+        <button onclick="calculatePerimeter()">Hitung Keliling</button>
+        <button onclick="resetFieldskeliling()">Reset</button>
+       </section>
+        
+         
+      <div id="keliling-output"></div> 
+    </section>
+</main>
+
+</body>
+</html>
